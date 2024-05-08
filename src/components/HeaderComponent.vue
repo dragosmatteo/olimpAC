@@ -64,9 +64,14 @@ import { ref } from "vue";
 import BurgerIcon from "../assets/icons/BurgerIcon.vue";
 
 const isMenuOpen = ref(false);
+let closeMenu = ref(() => {});
 
 if (window.innerWidth < 768) {
   isMenuOpen.value = false;
+
+  closeMenu = () => {
+    isMenuOpen.value = false;
+  };
 } else {
   isMenuOpen.value = true;
 }
@@ -74,16 +79,18 @@ if (window.innerWidth < 768) {
 const resize = () => {
   if (window.innerWidth < 768) {
     isMenuOpen.value = false;
+
+    closeMenu = () => {
+      isMenuOpen.value = false;
+    };
   } else {
     isMenuOpen.value = true;
+
+    closeMenu = () => {};
   }
 };
 
 window.onresize = resize;
-
-const closeMenu = () => {
-  isMenuOpen.value = false;
-};
 
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value;
