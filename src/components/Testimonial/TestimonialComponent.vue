@@ -36,5 +36,5 @@
 </template>
 
 <script setup>
-import DotsIcon from "../assets/icons/DotsIcon.vue";
+import DotsIcon from "../../assets/icons/DotsIcon.vue";
 </script>

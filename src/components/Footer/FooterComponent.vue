@@ -23,7 +23,7 @@
           <img
             class="h-[64px] w-[64px] object-cover"
             alt="Olimpiada ac"
-            src="../assets/img/footer-logo.png"
+            src="../../assets/img/footer-logo.png"
           />
           <div class="bg-yellow h-16 w-[1px]" />
           <span
@@ -118,11 +118,11 @@
 </template>
 
 <script setup>
-import FacebookIcon from "../assets/icons/FacebookIcon.vue";
-import InstagramIcon from "../assets/icons/InstagramIcon.vue";
-import TwitterIcon from "../assets/icons/TwitterIcon.vue";
+import FacebookIcon from "../../assets/icons/FacebookIcon.vue";
+import InstagramIcon from "../../assets/icons/InstagramIcon.vue";
+import TwitterIcon from "../../assets/icons/TwitterIcon.vue";
 
-import GuessIcon from "../assets/icons/GuessIcon.vue";
-import MailIcon from "../assets/icons/MailIcon.vue";
-import PhoneIcon from "../assets/icons/PhoneIcon.vue";
+import GuessIcon from "../../assets/icons/GuessIcon.vue";
+import MailIcon from "../../assets/icons/MailIcon.vue";
+import PhoneIcon from "../../assets/icons/PhoneIcon.vue";
 </script>

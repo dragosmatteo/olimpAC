@@ -7,7 +7,7 @@
         <a href="#">
           <app-logo class="flex flex-row items-center gap-[10px]">
             <img
-              src="../assets/img/logo.png"
+              src="../../assets/img/logo.png"
               alt="logo"
               class="w-[32px] h-[32px]"
             />
@@ -61,7 +61,7 @@
 
 <script setup>
 import { ref } from "vue";
-import BurgerIcon from "../assets/icons/BurgerIcon.vue";
+import BurgerIcon from "../../assets/icons/BurgerIcon.vue";
 
 const isMenuOpen = ref(false);
 let closeMenu = ref(() => {});

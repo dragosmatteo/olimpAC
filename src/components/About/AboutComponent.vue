@@ -1,7 +1,7 @@
 <template>
   <div class="max-w-[1140px] m-auto">
     <div class="flex flex-col-reverse items-center xl:flex-row">
-      <img src="../assets/img/about.png" alt="logo" class="" />
+      <img src="../../assets/img/about.png" alt="logo" class="" />
 
       <div
         class="flex flex-col justify-center items-center text-center xl:justify-end xl:items-end xl:text-right pl-0 lg:pl-0 xl:pl-5"
@@ -57,7 +57,7 @@
         </a>
       </div>
 
-      <img src="../assets/img/about-1.png" alt="logo" class="" />
+      <img src="../../assets/img/about-1.png" alt="logo" class="" />
     </div>
   </div>
 </template>

@@ -22,5 +22,5 @@
 </template>
 
 <script setup>
-import ArrowIcon from "../assets/icons/RightArrow.vue";
+import ArrowIcon from "../../assets/icons/RightArrow.vue";
 </script>

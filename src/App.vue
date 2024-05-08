@@ -1,10 +1,10 @@
 <script setup>
-import About from "./components/AboutComponent.vue";
-import Calendly from "./components/CalendlyComponent.vue";
-import Footer from "./components/FooterComponent.vue";
-import Header from "./components/HeaderComponent.vue";
-import Hero from "./components/HeroComponent.vue";
-import Testimonial from "./components/TestimonialComponent.vue";
+import About from "./components/About/AboutComponent.vue";
+import Calendly from "./components/Calendly/CalendlyComponent.vue"
+import Footer from "./components/Footer/FooterComponent.vue";
+import Hero from "./components/Hero/HeroComponent.vue";
+import Header from "./components/Header/HeaderComponent.vue"
+import Testimonial from "./components/Testimonial/TestimonialComponent.vue";
 </script>
 
 <template>
