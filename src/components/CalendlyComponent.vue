@@ -11,11 +11,45 @@
       class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-[24px] pt-[121px]"
     >
       <app-card>
-        <img
-          src="../assets/img/football.png"
-          class="h-[664px] smd:h-[664px] xl:h-auto w-full"
-          alt="football"
-        />
+        <div class="image-overlay">
+          <div class="content">
+            <div class="content-overlay"></div>
+
+            <img
+              src="../assets/img/football.png"
+              class="h-[664px] smd:h-[664px] xl:h-auto w-full"
+              alt="football"
+            />
+
+            <div class="content-details fadeIn-bottom fadeIn-right">
+              <h4>This is a title</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+
+              <a href="#">
+                <button
+                  class="mt-[16px] flex font-rubik text-[#E9C65C] text-[14px] items-center px-[35px] py-[15px] font-semibold justify-center gap-[10px] rounded-full border-2 border-[#E9C65C] bg-transparent focus:outline-none transition duration-300 hover:bg-[#E9C65C] hover:text-black"
+                >
+                  INSCRIE-TE ACUM!
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
 
         <div class="mt-[16px]">
           <div class="flex flex-row justify-left items-center gap-[32px]">
@@ -54,11 +88,45 @@
       </app-card>
 
       <app-card>
-        <img
-          src="../assets/img/football.png"
-          class="h-[664px] smd:h-[664px] xl:h-auto w-full"
-          alt="football"
-        />
+        <div class="image-overlay">
+          <div class="content">
+            <div class="content-overlay"></div>
+
+            <img
+              src="../assets/img/football.png"
+              class="h-[664px] smd:h-[664px] xl:h-auto w-full"
+              alt="football"
+            />
+
+            <div class="content-details fadeIn-bottom fadeIn-right">
+              <h4>This is a title</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+
+              <a href="#">
+                <button
+                  class="mt-[16px] flex font-rubik text-[#E9C65C] text-[14px] items-center px-[35px] py-[15px] font-semibold justify-center gap-[10px] rounded-full border-2 border-[#E9C65C] bg-transparent focus:outline-none transition duration-300 hover:bg-[#E9C65C] hover:text-black"
+                >
+                  INSCRIE-TE ACUM!
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
 
         <div class="mt-[16px]">
           <div class="flex flex-row justify-left items-center gap-[32px]">
