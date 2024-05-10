@@ -1,9 +1,9 @@
 <script setup>
 import About from "./components/About/AboutComponent.vue";
-import Calendly from "./components/Calendly/CalendlyComponent.vue"
+import Calendly from "./components/Calendly/CalendlyComponent.vue";
 import Footer from "./components/Footer/FooterComponent.vue";
 import Hero from "./components/Hero/HeroComponent.vue";
-import Header from "./components/Header/HeaderComponent.vue"
+import Header from "./components/Header/HeaderComponent.vue";
 import Testimonial from "./components/Testimonial/TestimonialComponent.vue";
 </script>
 

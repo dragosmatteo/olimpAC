@@ -4,6 +4,8 @@ export default {
     title: String,
     text: String,
     imageSrc: String,
+    data: String,
+    locatie: String,
   },
 };
 </script>
@@ -12,13 +14,9 @@ export default {
   <app-card>
     <div class="image-overlay">
       <div class="content">
-        <img
-          :src="imageSrc"
-          class="h-[664px] smd:h-[664px] xl:h-auto w-full"
-          alt="football"
-        />
+        <div class="h-[664px] smd:h-[664px] w-full image-content" :style="{ backgroundImage: 'url(' + imageSrc + ')' }"></div>
 
-        <div class="content-details fadeIn-bottom fadeIn-right">
+        <div class="content-details">
           <div class="content-text">
             <h4>{{ title }}</h4>
             <p>
@@ -27,7 +25,7 @@ export default {
           </div>
           <a href="#">
             <button
-              class="content-button mt-[16px] flex font-rubik text-[#E9C65C] text-[14px] items-center px-[35px] py-[15px] font-semibold justify-center gap-[10px] rounded-full border-2 border-[#E9C65C] bg-transparent focus:outline-none transition duration-300 hover:bg-[#E9C65C] hover:text-black"
+              class="content-button mt-[16px] flex font-rubik text-[#E9C65C] text-[14px] items-center font-semibold justify-center gap-[10px] rounded-full border-2 border-[#E9C65C] bg-transparent focus:outline-none transition duration-300 hover:bg-[#E9C65C] hover:text-black"
             >
               INSCRIE-TE ACUM!
             </button>
@@ -41,24 +39,24 @@ export default {
         <h4
           class="text-white font-syne text-[24px] font-bold leading-[133.333%]"
         >
-          Football - 29 Mai
+          {{ title }}
         </h4>
 
         <div class="w-[48px] h-px bg-[#213B2A]"></div>
       </div>
 
-      <div class="mt-[32px] flex gap-7">
+      <div class="mt-[16px] flex gap-8">
         <p
           class="text-silver font-rubik text-base font-normal leading-[137.5%] tracking-tighter"
         >
-          Ora:
+          Data:&nbsp;
         </p>
         <span
           class="text-white font-Rubik text-base font-normal leading-[137.5%] tracking-[0.25px]"
-          >15:00</span
+          >{{ data }}</span
         >
       </div>
-      <div class="flex gap-4">
+      <div class="flex gap-8">
         <p
           class="text-silver font-rubik text-base font-normal leading-[137.5%] tracking-tighter"
         >
@@ -66,7 +64,7 @@ export default {
         </p>
         <span
           class="text-white font-Rubik text-base font-normal leading-[137.5%] tracking-[0.25px]"
-          >Teren Fotbal 1 Teren Fotbal 1</span
+          >{{ locatie }}</span
         >
       </div>
     </div>
@@ -102,7 +100,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: space-between;
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -110,6 +108,7 @@ export default {
   -moz-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
   border-radius: 16px;
+  padding: 32px;
 }
 
 .content-details::before {
@@ -117,11 +116,12 @@ export default {
   width: 20px;
   height: 20px;
   position: absolute;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.8);
   bottom: -20px;
   right: -20px;
   border-radius: 50%;
-  transition: height 0.3s ease-in-out, width 0.3s ease-in-out, border-radius 0.05s ease-in-out;
+  transition: height 0.3s ease-in-out, width 0.3s ease-in-out,
+    border-radius 0.05s ease-in-out;
 }
 
 .content:hover .content-details::before {
@@ -155,13 +155,14 @@ export default {
 }
 
 .content-text {
-  transform: translate(0, -200%);
+  transform: translate(0, -1000px);
   transition: all ease-in-out 0.5s;
 }
 
 .content-button {
   transform: translate(-200%, 0);
   transition: all ease-in-out 0.5s;
+  padding: 12px 24px;
 }
 
 .content-details p {
@@ -178,5 +179,13 @@ export default {
 
 .image-overlay {
   overflow: hidden;
+}
+
+.image-content {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  /* border: 2px solid rgba(255,255,255,0.3); */
 }
 </style>

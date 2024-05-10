@@ -1,5 +1,5 @@
 <template>
-  <footer class="w-full py-[42px] xl:py-[83px] bg-[#131313]">
+  <footer class="w-full py-[42px] xl:py-[83px] bg-[#131313]" id="contact">
     <div class="flex flex-col gap-[45px] smd:gap-[96px]">
       <div class="text-center">
         <p
@@ -42,20 +42,20 @@
             Socials
           </span>
 
-          <ul class="flex flex-row gap-[8px] xl:gap-[10px]">
+          <ul class="flex flex-row gap-[8px] xl:gap-[10px] links">
             <li>
-              <a href="#" target="_blank">
+              <a href="https://www.facebook.com/lsac.is" target="_blank">
                 <FacebookIcon class="w-[24px] h-[24px] xl:w-auto xl:h-auto" />
               </a>
             </li>
             <li>
-              <a href="#" target="_blank">
+              <a href="https://www.instagram.com/lsaciasi/" target="_blank">
                 <InstagramIcon class="w-[24px] h-[24px] xl:w-auto xl:h-auto" />
               </a>
             </li>
             <li>
-              <a href="#" target="_blank">
-                <TwitterIcon class="w-[24px] h-[24px] xl:w-auto xl:h-auto" />
+              <a href="https://lsaciasi.ro/" target="_blank">
+                <WebsiteIcon class="w-[24px] h-[24px] xl:w-auto xl:h-auto" />
               </a>
             </li>
           </ul>
@@ -84,7 +84,6 @@
               >
                 0787 223 416</span
               >
-              />
             </a>
           </div>
           <div class="flex flex-row gap-4 items-center">
@@ -98,7 +97,6 @@
               >
                 elisa-michela.stefanache@student.tuiasi.ro</span
               >
-              />
             </a>
           </div>
         </div>
@@ -120,9 +118,21 @@
 <script setup>
 import FacebookIcon from "../../assets/icons/FacebookIcon.vue";
 import InstagramIcon from "../../assets/icons/InstagramIcon.vue";
-import TwitterIcon from "../../assets/icons/TwitterIcon.vue";
+import WebsiteIcon from "../../assets/icons/WebsiteIcon.vue";
 
 import GuessIcon from "../../assets/icons/GuessIcon.vue";
 import MailIcon from "../../assets/icons/MailIcon.vue";
 import PhoneIcon from "../../assets/icons/PhoneIcon.vue";
 </script>
+
+<style>
+.links svg {
+  height: 36px;
+  width: auto;
+  transition: all 0.2s ease-in-out;
+}
+
+.links svg:hover {
+  transform: scale(1.2);
+}
+</style>

@@ -31,22 +31,22 @@
         </button>
         <div v-show="isMenuOpen" class="w-full md:w-auto" id="navbar-default">
           <ul
-            class="text-gray font-rubik text-base font-medium uppercase flex items-center justify-center flex-col gap-[15px] p-4 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:gap-[0px]"
+            class="nav-links text-gray font-rubik text-base font-medium uppercase flex items-center justify-center flex-col gap-[15px] p-4 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:gap-[0px]"
           >
             <li @click="closeMenu">
-              <a href="#">INFORMATII</a>
+              <a href="#inscrieri">INSCRIERI</a>
             </li>
             <li @click="closeMenu">
-              <a href="#">ALTCEVA</a>
+              <a href="#calendar">CALENDAR</a>
             </li>
             <li @click="closeMenu">
-              <a href="#">INCA CEVA</a>
+              <a href="#testimonial">TESTIMONIAL</a>
             </li>
 
             <li @click="closeMenu">
-              <a href="#">
+              <a href="#contact">
                 <button
-                  class="flex text-white opacity-80 text-[14px] items-center px-[35px] py-[15px] justify-center gap-[10px] rounded-full border-2 border-white border-opacity-30 bg-opacity-50 bg-black hover:bg-opacity-100 focus:outline-none"
+                  class="header-button flex text-white opacity-80 text-[14px] items-center px-[35px] py-[15px] justify-center gap-[10px] rounded-full border-2 border-white border-opacity-30 bg-opacity-50 bg-black hover:bg-opacity-100 focus:outline-none"
                 >
                   CONTACT
                 </button>
@@ -96,3 +96,38 @@ const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value;
 };
 </script>
+
+
+<style>
+
+.nav-links > *:not(:last-child)::after {
+  position: absolute;
+  content: ' ';
+  width: 0px;
+  height: 2px;
+  background: #fff;
+  bottom: -4px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-links > *:hover:not(:last-child)::after {
+  width: 100%;
+}
+
+
+.nav-links >*{
+  position: relative;
+}
+
+.header-button {
+  cursor: pointer;
+}
+
+.header-button:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+
+</style>
