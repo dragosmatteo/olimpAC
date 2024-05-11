@@ -85,6 +85,8 @@ export default {
   -webkit-transition: all 0.4s ease-in-out 0s;
   -moz-transition: all 0.4s ease-in-out 0s;
   transition: all 0.4s ease-in-out 0s;
+  top: 0;
+  left: 0;
 }
 
 .content-details {
@@ -122,6 +124,7 @@ export default {
   border-radius: 50%;
   transition: height 0.3s ease-in-out, width 0.3s ease-in-out,
     border-radius 0.05s ease-in-out;
+  
 }
 
 .content:hover .content-details::before {
@@ -130,6 +133,8 @@ export default {
   border-radius: 16px;
   bottom: 0;
   right: 0;
+  top: 0;
+  left: 0;
 }
 
 .content:hover .content-details {
@@ -161,7 +166,7 @@ export default {
 
 .content-button {
   transform: translate(-200%, 0);
-  transition: all ease-in-out 0.5s;
+  transition: transform ease-in-out 0.8s, background-color ease-in-out 0.2s;
   padding: 12px 24px;
 }
 
