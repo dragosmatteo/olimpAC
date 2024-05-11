@@ -60,9 +60,17 @@
         <p
           class="text-silver font-rubik text-base font-normal leading-[154.5%] tracking-[0.99px]"
         >
-          Aaronn is a New York-based visual designer focusing on branding and
-          visual identity. Her portfolio showcases her wide range of work,
-          spanning books, posters and web design.
+          Olimpiada AC este un eveniment caritabil, ce reunește sporturile
+          îndrăgite de studenți și ne aduce mai aproape de spiritul de echipă .
+          Indiferent de regulile jocurilor și de dorința tuturor de a participa
+          la anumite sporturi, împreună avem același obiectiv: să dăruim din
+          puținul nostru . Prin seria de jocuri sportive, dorim să strângem
+          fonduri pentru două persoane: 💙🤍Petcu Andrei, colegul nostru de
+          facultate ce a suferit un accident grav în urmă cu câteva luni și
+          pentru 💙🤍Moraru Mihai, un copil în vârstă de 7 ani care suferă de
+          autism. Fiecare joc ales contribuie la sprijinul lor și la clădirea
+          speranței că generozitatea nu are niciodată limite. Vino alături de
+          noi să facem diferența!
         </p>
 
         <a href="#" class="mt-[30px] mb-[32px] xl:mb-0">
@@ -79,7 +87,6 @@
     </div>
   </div>
 </template>
-
 
 <script setup>
 import ArrowIcon from "../../assets/icons/RightArrow.vue";

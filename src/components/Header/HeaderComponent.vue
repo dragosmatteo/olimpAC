@@ -46,7 +46,7 @@
             <li @click="closeMenu">
               <a href="#contact">
                 <button
-                  class="header-button flex text-white opacity-80 text-[14px] items-center px-[35px] py-[15px] justify-center gap-[10px] rounded-full border-2 border-white border-opacity-30 bg-opacity-50 bg-black hover:bg-opacity-100 focus:outline-none"
+                  class="header-button flex text-white opacity-80 text-[14px] items-center px-[24px] py-[12px] justify-center gap-[10px] rounded-full border-2 border-white border-opacity-30 bg-opacity-50 bg-black hover:bg-opacity-100 focus:outline-none"
                 >
                   CONTACT
                 </button>

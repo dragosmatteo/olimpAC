@@ -111,6 +111,7 @@ export default {
   transition: all 0.3s ease-in-out 0s;
   border-radius: 16px;
   padding: 32px;
+  opacity: 0;
 }
 
 .content-details::before {
@@ -139,6 +140,7 @@ export default {
 
 .content:hover .content-details {
   display: flex;
+  opacity: 1;
 }
 
 .content:hover .content-text {
