@@ -28,6 +28,7 @@ import Remi from './../../assets/img/remi.jpg'
         :imageSrc="Fotbal"
         locatie="TBA"
         data="25 Mai (Finala 26 Mai)"
+        taxa="100 RON / Echipa"
       />
       <SportCard
         title="Biliard"
@@ -35,12 +36,14 @@ import Remi from './../../assets/img/remi.jpg'
         :imageSrc="Biliard"
         locatie="TBA"
         data="23 Mai"
+        taxa="10 RON / Om"
       />
       <SportCard
         title="Ping Pong"
         text="Mingile sunt aruncate, iar jucătorii răspund provocării adversarului. Ce trebuie să facă este să lase mingea în cădere o singură dată în terenul propriu și să o trimită imediat celuilalt. Câștigă cel care prezintă concentrare, reflexe agere și adună punctajul maxim: enjoy the ping-pong sound."
         :imageSrc="PingPong"
         locatie="TBA"
+        taxa="10 RON / Om"
         data="24 Mai"
       />
       <SportCard
@@ -49,6 +52,7 @@ import Remi from './../../assets/img/remi.jpg'
         :imageSrc="Badminton"
         locatie="TBA"
         data="26 Mai"
+        taxa="10 RON / Om"
       />
       <SportCard
         title="Volei"
@@ -56,6 +60,7 @@ import Remi from './../../assets/img/remi.jpg'
         :imageSrc="Volei"
         locatie="TBA"
         data="26 Mai"
+        taxa="100 RON / Echipa"
       />
       <SportCard
         title="Sah"
@@ -65,6 +70,7 @@ import Remi from './../../assets/img/remi.jpg'
         :imageSrc="Chess"
         locatie="TBA"
         data="26 Mai"
+        taxa="10 RON / Om"
       />
       <SportCard
         title="Table"
@@ -72,6 +78,7 @@ import Remi from './../../assets/img/remi.jpg'
         :imageSrc="Table"
         locatie="TBA"
         data="26 Mai"
+        taxa="10 RON / Om"
       />
       <SportCard
         title="Remi"
@@ -79,6 +86,7 @@ import Remi from './../../assets/img/remi.jpg'
         :imageSrc="Remi"
         locatie="TBA"
         data="26 Mai"
+        taxa="10 RON / Om"
       />
     </div>
   </div>

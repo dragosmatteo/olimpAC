@@ -1,4 +1,6 @@
 <script>
+import ButtonVisible from "./ButtonVisible.vue";
+
 export default {
   props: {
     title: String,
@@ -6,7 +8,22 @@ export default {
     imageSrc: String,
     data: String,
     locatie: String,
+    taxa: String,
   },
+  data() {
+    return {
+      isContentVisible: false,
+    };
+  },
+  methods: {
+    methods: {
+      toggleContent() {
+        this.isContentVisible = !this.isContentVisible;
+        console.log(this.isContentVisible);
+      },
+    },
+  },
+  components: { ButtonVisible },
 };
 </script>
 
@@ -14,9 +31,12 @@ export default {
   <app-card>
     <div class="image-overlay">
       <div class="content">
-        <div class="h-[664px] smd:h-[664px] w-full image-content" :style="{ backgroundImage: 'url(' + imageSrc + ')' }"></div>
-
-        <div class="content-details">
+        <div
+          class="h-[664px] smd:h-[664px] w-full image-content"
+          :style="{ backgroundImage: 'url(' + imageSrc + ')' }"
+        ></div>
+        <ButtonVisible />
+        <div class="content-details" :class="{ visible: isContentVisible }">
           <div class="content-text">
             <h4>{{ title }}</h4>
             <p>
@@ -67,6 +87,17 @@ export default {
           >{{ locatie }}</span
         >
       </div>
+      <div class="flex gap-8">
+        <p
+          class="text-silver font-rubik text-base font-normal leading-[137.5%] tracking-tighter"
+        >
+          Taxa:&nbsp;
+        </p>
+        <span
+          class="text-white font-Rubik text-base font-normal leading-[137.5%] tracking-[0.25px]"
+          >{{ taxa }}</span
+        >
+      </div>
     </div>
   </app-card>
 </template>
@@ -112,6 +143,7 @@ export default {
   border-radius: 16px;
   padding: 32px;
   opacity: 0;
+  z-index: 3;
 }
 
 .content-details::before {
@@ -125,7 +157,6 @@ export default {
   border-radius: 50%;
   transition: height 0.3s ease-in-out, width 0.3s ease-in-out,
     border-radius 0.05s ease-in-out;
-  
 }
 
 .content:hover .content-details::before {
@@ -194,5 +225,10 @@ export default {
   background-position: center;
   border-radius: 16px;
   /* border: 2px solid rgba(255,255,255,0.3); */
+}
+
+.visible {
+  display: flex;
+  opacity: 1;
 }
 </style>

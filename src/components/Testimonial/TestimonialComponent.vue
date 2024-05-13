@@ -17,20 +17,26 @@
       <p
         class="w-[100%] md:w-[75%] xl:w-[75%] text-[18px] mt-[44px] font-rubik font-normal leading-[133.333%] text-silver"
       >
-        “Aaronn was fantastic to work with from start to finish. We were looking
-        for a simple, stand-out logo and he delivered. I tried designing the
-        logo myself thinking I wouldn’t need to pay the money for a professional
-        graphic designer but I was very wrong. Working with Aaronn was worth
-        every penny and was surprisingly affordable! I remember him saying
-        simplicity is key to a successful logo and boy he was right. I can’t
-        thank Aaronn enough for his effort and professionalism. I would
-        recommend him to anyone looking for a design!”
+        “Organizarea Olimpiadei AC a reprezentat pentru mine o experiență cu
+        adevărat inspirațională și împlinitoare. Pot spune ca este evenimentul
+        meu de suflet, având totodată onoarea și bucuria să fiu organizatorul
+        principal din partea boardului. Am fost extrem de încântată să observ
+        că, deși a fost readus la viata după mulți ani de absență, evenimentul a
+        atras participanți extrem de competitivi și dedicați cauzei, precum și
+        voluntari entuziaști și gata să contribuie. Prin eforturile noastre
+        comune, am reușit să aducem zâmbete pe fețele unor copii. Touch-ul
+        personal al echipei din anul precedent, a fost transformarea Olimpiadei
+        AC într-un eveniment caritabil si cred că a fost cea mai buna decizie
+        pentru a-l face cu adevărat special si memorabil. Sunt onorata ca am
+        facut parte din echipa de organizare a primei ediții și sper ca în
+        viitor, voluntarii să preia ștafeta cu aceeași pasiune cu care ne-am
+        dedicat noi.”
       </p>
 
       <h5
         class="text-[24px] mt-[44px] font-syne font-bold leading-none text-white"
       >
-        -Martin lee
+        -Denisa Musteata, fost organizator olimpiadaAC editia 2023
       </h5>
     </div>
   </div>
